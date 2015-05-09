@@ -3,11 +3,7 @@ import QtQuick.Window 2.2
 
 Window {
     visible: true
-    MainForm {
-        anchors.fill: parent
-        mouseArea.onClicked: {
-            Qt.quit();
-        }
+    width: 200
+    height: 200
 
-    }
 }

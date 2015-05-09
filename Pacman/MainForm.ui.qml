@@ -5,7 +5,7 @@ Rectangle {
 
     width: 360
     height: 360
-
+    color: "green"
     MouseArea {
         id: mouseArea
         anchors.fill: parent
