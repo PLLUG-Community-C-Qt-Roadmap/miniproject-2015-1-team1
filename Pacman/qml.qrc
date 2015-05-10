@@ -3,7 +3,9 @@
         <file>main.qml</file>
         <file>PACFONT.TTF</file>
         <file>icon.ico</file>
-        <file>background.gif</file>
         <file>background.avi</file>
+        <file>MenuButton.qml</file>
+        <file>options.qml</file>
+        <file>MainScreen.qml</file>
     </qresource>
 </RCC>
