@@ -5,5 +5,14 @@ Window {
     visible: true
     width: 200
     height: 200
-
+    FontLoader{
+        id: pacfont
+        source: "qrc:/PACFONT.TTF"
+    }
+    Rectangle{
+        Text{
+            font.family: "pacfont"
+           text: "ss"
+        }
+    }
 }
