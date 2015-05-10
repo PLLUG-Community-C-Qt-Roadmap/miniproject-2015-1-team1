@@ -1,18 +1,27 @@
 import QtQuick 2.4
 import QtQuick.Window 2.2
-
+import QtMultimedia 5.0
 Window {
+    id: mainWindow
     visible: true
-    width: 200
-    height: 200
+    width: 600
+    height: 600
     FontLoader{
         id: pacfont
         source: "qrc:/PACFONT.TTF"
     }
-    Rectangle{
-        Text{
-            font.family: "pacfont"
-           text: "ss"
-        }
+
+    Video {
+        id: video
+        width : mainWindow.width
+        height : mainWindow.height
+        source: "background.avi"
+        fillMode: VideoOutput.Stretch
+        autoPlay: true
+        muted: true
+        onStopped: {video.play()}
+
     }
+
+
 }

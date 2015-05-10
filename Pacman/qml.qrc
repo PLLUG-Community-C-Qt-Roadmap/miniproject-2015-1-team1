@@ -3,5 +3,7 @@
         <file>main.qml</file>
         <file>PACFONT.TTF</file>
         <file>icon.ico</file>
+        <file>background.gif</file>
+        <file>background.avi</file>
     </qresource>
 </RCC>

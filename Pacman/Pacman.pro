@@ -1,7 +1,7 @@
 TEMPLATE = app
 
 QT += qml quick
-
+RC_ICONS = icon.ico #windows
 SOURCES += main.cpp
 
 RESOURCES += qml.qrc
