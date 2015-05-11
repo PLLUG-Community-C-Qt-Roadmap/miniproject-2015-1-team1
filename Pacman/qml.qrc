@@ -7,5 +7,6 @@
         <file>MenuButton.qml</file>
         <file>options.qml</file>
         <file>MainScreen.qml</file>
+        <file>logo.png</file>
     </qresource>
 </RCC>

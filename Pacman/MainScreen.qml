@@ -9,37 +9,25 @@ Item {
         id: pacfont
         source: "qrc:/PACFONT.TTF"
     }
-    Video {
-        id: video
-        width : parent.width
-        height : parent.height
-        source: "background.avi"
-        fillMode: VideoOutput.Stretch
-        autoPlay: true
-        muted: true
-        onStopped: {video.play()}
 
-    }
     ColumnLayout {
         anchors.fill: parent
-        anchors.topMargin: 100
-        anchors.bottomMargin: 100
+        anchors.topMargin: 50
+        anchors.bottomMargin: 150
         Item{
             Layout.alignment: Qt.AlignHCenter
-            Layout.minimumHeight: logoTxt.height
-            Layout.minimumWidth: logoTxt.width
-            Text{
-                id: logoTxt
-                color: "yellow"
-                text:"Pacman"
-                font.family: "pacfont"
-                font.pointSize: 70
+            Layout.minimumHeight: logoImg.height
+            Layout.minimumWidth: logoImg.width
+            Image{
+                id: logoImg
+                source: "qrc:/logo.png"
             }
         }
 
         ColumnLayout{
             Layout.alignment: Qt.AlignHCenter
-            Layout.minimumHeight: parent.height - logoTxt.height
+            Layout.minimumHeight: parent.height - logoImg.height
+
             MenuButton {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.minimumHeight: textHeight

@@ -3,12 +3,9 @@ import QtQuick.Window 2.2
 
 Rectangle {
     anchors.fill: parent
-    color: "black"
+    color: "transparent"
 
-    Rectangle{
-        width: 100
-        height: 100
-        color: "red"
+
         MenuButton {
 
             text: "Back"
@@ -17,6 +14,6 @@ Rectangle {
             }
 
         }
-    }
+
 }
 

@@ -9,7 +9,7 @@ Item{
     Text {
         id: rootTxt
         text: qsTr(root.text)
-        color: "white"
+        color: "lightgrey"
         font.family: "pacfont"
         font.pixelSize: 20
         MouseArea {
@@ -18,9 +18,9 @@ Item{
             onContainsMouseChanged: {
                 if (containsMouse) {
                     rootTxt.color = "green"
-                    rootTxt.font.pixelSize = 30
+                    rootTxt.font.pixelSize = 25
                 } else {
-                    rootTxt.color = "white"
+                    rootTxt.color = "lightgrey"
                     rootTxt.font.pixelSize = 20
                 }
             }
