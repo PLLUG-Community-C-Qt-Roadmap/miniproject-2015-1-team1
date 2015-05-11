@@ -33,6 +33,9 @@ Item {
                 Layout.minimumHeight: textHeight
                 Layout.minimumWidth: textWidth
                 text: "New Game"
+                onBtnClicked:{
+                    pageLoader.source ="qrc:/newGame.qml"
+                }
             }
             MenuButton {
                 Layout.alignment: Qt.AlignHCenter

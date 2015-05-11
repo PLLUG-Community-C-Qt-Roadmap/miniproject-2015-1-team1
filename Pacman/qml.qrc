@@ -9,5 +9,7 @@
         <file>MainScreen.qml</file>
         <file>logo.png</file>
         <file>High Score.qml</file>
+        <file>TextFont.qml</file>
+        <file>newGame.qml</file>
     </qresource>
 </RCC>
