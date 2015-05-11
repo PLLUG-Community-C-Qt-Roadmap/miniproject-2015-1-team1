@@ -48,15 +48,16 @@ Item {
                 Layout.minimumHeight: textHeight
                 Layout.minimumWidth: textWidth
                 text: "Legend"
-                onBtnClicked:{
-                    pageLoader.source = "qrc:/Legend.qml"
-                }
+
             }
             MenuButton {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.minimumHeight: textHeight
                 Layout.minimumWidth: textWidth
                 text: "High Score"
+                onBtnClicked:{
+                    pageLoader.source = "qrc:/High Score.qml"
+                }
             }
             MenuButton {
                 Layout.alignment: Qt.AlignHCenter

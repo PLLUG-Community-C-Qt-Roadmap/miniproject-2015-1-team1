@@ -8,6 +8,6 @@
         <file>options.qml</file>
         <file>MainScreen.qml</file>
         <file>logo.png</file>
-        <file>Legend.qml</file>
+        <file>High Score.qml</file>
     </qresource>
 </RCC>
