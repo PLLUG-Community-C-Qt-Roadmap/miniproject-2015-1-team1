@@ -33,8 +33,6 @@ Item {
             RowLayout{
                 TextFont {
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
                     text: "Music  "
                 }
                 Item { Layout.fillWidth: true }
@@ -45,8 +43,6 @@ Item {
             RowLayout{
                 TextFont {
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
                     text: "Sounds"
                 }
                 Item { Layout.fillWidth: true }
@@ -58,8 +54,6 @@ Item {
                 TextFont {
                     id: volume
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
                     text: "Volume"
                 }
                 Item { Layout.fillWidth: true }
@@ -72,24 +66,25 @@ Item {
                         stepSize: 1
 
                     }
-                    TextFont{
+                    Text{
+                        color:"yellow"
                         Layout.alignment: Qt.AlignLeft
-                        Layout.minimumHeight: textHeight
-                        Layout.minimumWidth: textWidth
-                        text: "Non%" //slider.value.toString() + "%"
-
+                        text: slider.value.toString() + "%"
+                        font.pixelSize: 20
+                        font.bold: true
+                        font.italic: true
                     }
                 }
             }
+
             RowLayout{
                 TextFont {
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
                     text: "Difficulty"
                 }
                 Item { Layout.fillWidth: true }
                 ComboBox {
+                    Layout.alignment: Qt.AlignRight
                     //editable: true
                     model: ListModel {
                         id: model
@@ -103,49 +98,59 @@ Item {
                             implicitHeight: 25
                             color: "transparent"
                         }
-                        font: pacfont.name
                         textColor: "white"
+                        font: pacfont.name
+                        label: Item {
+                            anchors.fill: parent
+                            Text {
+                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.right: parent.right
+                                anchors.rightMargin: 5
+                                font.pointSize: 15
+                                font.family: pacfont.name
+                                color:"yellow"
+                                text: control.currentText
+                            }
+                        }
                     }
                 }
             }
             RowLayout{
                 TextFont {
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
-                    text: "Fullscreen mode"
+                    text: "Fullscreen"
                 }
                 Item { Layout.fillWidth: true }
                 CheckBox{}
             }
 
-                Item { Layout.fillHeight: true }
+            Item { Layout.fillHeight: true }
 
-                RowLayout{
-                    MenuButton {
-                        Layout.alignment: Qt.AlignLeft
-                        Layout.minimumHeight: textHeight
-                        Layout.minimumWidth: textWidth
-                        text: "Back"
-                        onBtnClicked: {
-                            pageLoader.source = "qrc:/MainScreen.qml"
-                        }
-
+            RowLayout{
+                MenuButton {
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.minimumHeight: textHeight
+                    Layout.minimumWidth: textWidth
+                    text: "Back"
+                    onBtnClicked: {
+                        pageLoader.source = "qrc:/MainScreen.qml"
                     }
-                    Item { Layout.fillWidth: true }
-                    MenuButton {
-                        Layout.alignment: Qt.AlignRight
-                        Layout.minimumHeight: textHeight
-                        Layout.minimumWidth: textWidth
-                        text: "Quit"
-                        onBtnClicked: {
-                            Qt.quit()
-                        }
-                    }
-
 
                 }
+                Item { Layout.fillWidth: true }
+                MenuButton {
+                    Layout.alignment: Qt.AlignRight
+                    Layout.minimumHeight: textHeight
+                    Layout.minimumWidth: textWidth
+                    text: "Quit"
+                    onBtnClicked: {
+                        Qt.quit()
+                    }
+                }
+
+
             }
         }
-
     }
+
+}

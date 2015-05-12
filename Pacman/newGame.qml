@@ -32,15 +32,13 @@ Item {
             RowLayout{
                 TextFont {
                     Layout.alignment: Qt.AlignLeft
-                    Layout.minimumHeight: textHeight
-                    Layout.minimumWidth: textWidth
                     text: "Enter your name : "
                 }
                 Item { Layout.fillWidth: true }
                 TextEdit{
                     font: pacfont.name
-                    text: "PackPlayer"
-                    color: "white"
+                    text: "NewPack"
+                    color: "yellow"
                     focus: true
                 }
             }
@@ -62,7 +60,7 @@ Item {
                     Layout.alignment: Qt.AlignLeft
                     Layout.minimumHeight: textHeight
                     Layout.minimumWidth: textWidth
-                    text: "Okey"
+                    text: "Start Game"
                     }
                 }
             }
