@@ -51,6 +51,9 @@ Item {
                 Layout.minimumHeight: textHeight
                 Layout.minimumWidth: textWidth
                 text: "Legend"
+                onBtnClicked:{
+                    pageLoader.source = "qrc:/Legend.qml"
+                }
 
             }
             MenuButton {

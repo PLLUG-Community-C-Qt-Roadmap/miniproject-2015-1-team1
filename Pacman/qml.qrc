@@ -11,5 +11,12 @@
         <file>High Score.qml</file>
         <file>TextFont.qml</file>
         <file>newGame.qml</file>
+        <file>Legend.qml</file>
+        <file>blinky.png</file>
+        <file>clyde.png</file>
+        <file>inky.png</file>
+        <file>pinky.png</file>
+        <file>GhostLogo.png</file>
+        <file>GhostLegend.qml</file>
     </qresource>
 </RCC>
