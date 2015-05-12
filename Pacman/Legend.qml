@@ -8,6 +8,7 @@ Item {
         anchors.fill: parent
         ColumnLayout {
             Layout.alignment: Qt.AlignHCenter
+
             GhostLegend{
                 text:"Blinky"
                 source:"qrc:/blinky.png"
@@ -86,9 +87,11 @@ Item {
                         radius: width / 2.0
                     }
 
-                    TextFont {
+                    Text {
                         id: point10Txt
-                        text: qsTr("text")
+                        color: "white"
+                        font.pointSize: 20
+                        text: qsTr("10 Pts")
                     }
                 }
             }
@@ -97,6 +100,7 @@ Item {
                 Layout.preferredHeight: point50Txt.height
                 RowLayout {
                     width: point50Txt.width + pointBig.width
+
                     Rectangle {
                         id: pointBig
                         width: 20
@@ -104,9 +108,11 @@ Item {
                         radius: width / 2.0
                     }
 
-                    TextFont {
+                    Text {
                         id: point50Txt
-                        text: qsTr("text")
+                        color: "white"
+                        font.pointSize: 20
+                        text: qsTr("50 Pts")
                     }
                 }
             }
