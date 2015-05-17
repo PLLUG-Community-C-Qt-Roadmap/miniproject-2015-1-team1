@@ -11,19 +11,23 @@ Item {
 
             GhostLegend{
                 text:"Blinky"
-                source:"qrc:/blinky.png"
+                frameX: 193
+                frameY: 65
             }
             GhostLegend{
                 text:"Pinky"
-                source:"qrc:/pinky.png"
+                frameX: 193
+                frameY: 98
             }
             GhostLegend{
                 text:"Inky"
-                source:"qrc:/inky.png"
+                frameX: 193
+                frameY: 131
             }
             GhostLegend{
                 text:"Clyde"
-                source:"qrc:/clyde.png"
+                frameX: 193
+                frameY: 164
             }
         }
         ColumnLayout {
@@ -75,6 +79,7 @@ Item {
         }
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
+            spacing: 10
             Item {
                 Layout.preferredHeight: point10Txt.height
                 Layout.preferredWidth: point10Txt.width + pointSmall.width
@@ -98,6 +103,7 @@ Item {
             Item {
                 Layout.preferredWidth: point50Txt.width + pointBig.width
                 Layout.preferredHeight: point50Txt.height
+
                 RowLayout {
                     width: point50Txt.width + pointBig.width
 
@@ -136,10 +142,25 @@ Item {
     }
     Component {
         id: logoDelegate
-        Image {
-            source: "qrc:/GhostLogo.png"
+//        Image {
+//            source: "qrc:/Images/Images/sprite.png"
+//            Layout.preferredHeight: 40
+//            Layout.preferredWidth: 40
+//        }
+        AnimatedSprite{
+
             Layout.preferredHeight: 40
             Layout.preferredWidth: 40
+            source: "qrc:/Images/Images/sprite.png"
+            frameX: 129
+            frameY: 35
+            frameHeight:28
+            frameWidth:32
+            running: true
+            frameCount:2
+            frameDuration: 200
+            interpolate: false
+
         }
     }
 }

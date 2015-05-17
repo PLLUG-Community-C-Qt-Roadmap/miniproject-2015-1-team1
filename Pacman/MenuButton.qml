@@ -18,10 +18,9 @@ Item{
             onContainsMouseChanged: {
                 if (containsMouse) {
                     rootTxt.color = "green"
-                    rootTxt.font.pixelSize = 25
+
                 } else {
                     rootTxt.color = "lightgrey"
-                    rootTxt.font.pixelSize = 20
                 }
             }
             onClicked: {

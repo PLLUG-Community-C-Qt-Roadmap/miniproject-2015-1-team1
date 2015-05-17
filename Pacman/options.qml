@@ -8,7 +8,7 @@ Item {
     anchors.fill: parent
     FontLoader{
         id: pacfont
-        source: "qrc:/PACFONT.TTF"
+        source: "qrc:/Font/Font/pacfont.ttf"
     }
 
     ColumnLayout {
@@ -21,7 +21,7 @@ Item {
             Layout.minimumWidth: logoImg.width
             Image{
                 id: logoImg
-                source: "qrc:/logo.png"
+                source: "qrc:/Images/Images/logo.png"
             }
         }
 

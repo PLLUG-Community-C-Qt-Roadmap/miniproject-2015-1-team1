@@ -1,22 +1,29 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>PACFONT.TTF</file>
-        <file>icon.ico</file>
-        <file>background.avi</file>
         <file>MenuButton.qml</file>
         <file>options.qml</file>
         <file>MainScreen.qml</file>
-        <file>logo.png</file>
         <file>High Score.qml</file>
         <file>TextFont.qml</file>
         <file>newGame.qml</file>
         <file>Legend.qml</file>
-        <file>blinky.png</file>
-        <file>clyde.png</file>
-        <file>inky.png</file>
-        <file>pinky.png</file>
-        <file>GhostLogo.png</file>
         <file>GhostLegend.qml</file>
+        <file>icon.ico</file>
+    </qresource>
+    <qresource prefix="/Images">
+        <file>Images/blinky.png</file>
+        <file>Images/clyde.png</file>
+        <file>Images/GhostLogo.png</file>
+        <file>Images/inky.png</file>
+        <file>Images/logo.png</file>
+        <file>Images/pinky.png</file>
+        <file>Images/sprite.png</file>
+    </qresource>
+    <qresource prefix="/Font">
+        <file>Font/pacfont.ttf</file>
+    </qresource>
+    <qresource prefix="/Video">
+        <file>Video/background.avi</file>
     </qresource>
 </RCC>

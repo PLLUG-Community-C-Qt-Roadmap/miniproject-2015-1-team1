@@ -16,7 +16,7 @@ Window {
         id: video
         width : parent.width
         height : parent.height
-        source: "background.avi"
+        source: "/Video/Video/background.avi"
         fillMode: VideoOutput.Stretch
         autoPlay: true
         muted: true
