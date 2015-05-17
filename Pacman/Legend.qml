@@ -51,7 +51,7 @@ Item {
                 Text {
                     text: qsTr("400 Pts")
                     color: "white"
-                    font.pointSize: 15
+                    font.pointSize: 12
                 }
             }
             RowLayout {

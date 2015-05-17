@@ -12,12 +12,7 @@
         <file>icon.ico</file>
     </qresource>
     <qresource prefix="/Images">
-        <file>Images/blinky.png</file>
-        <file>Images/clyde.png</file>
-        <file>Images/GhostLogo.png</file>
-        <file>Images/inky.png</file>
         <file>Images/logo.png</file>
-        <file>Images/pinky.png</file>
         <file>Images/sprite.png</file>
     </qresource>
     <qresource prefix="/Font">
