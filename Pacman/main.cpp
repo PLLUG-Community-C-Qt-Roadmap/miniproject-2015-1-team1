@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
-    QFile fMap("map.txt");
+    QFile fMap(":/Map/map.txt");
     fMap.open(QIODevice::ReadOnly);
     QTextStream in(&fMap);
     QString sMap = in.readAll();
