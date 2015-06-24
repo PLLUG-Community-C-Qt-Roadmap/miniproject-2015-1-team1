@@ -10,15 +10,21 @@
         <file>Legend.qml</file>
         <file>GhostLegend.qml</file>
         <file>icon.ico</file>
+        <file>Map.qml</file>
     </qresource>
     <qresource prefix="/Images">
         <file>Images/logo.png</file>
         <file>Images/sprite.png</file>
+        <file>Images/MapSprite.png</file>
+        <file>Images/PacmanMoveSprite.png</file>
     </qresource>
     <qresource prefix="/Font">
         <file>Font/pacfont.ttf</file>
     </qresource>
     <qresource prefix="/Video">
         <file>Video/background.avi</file>
+    </qresource>
+    <qresource prefix="/Map">
+        <file>map.txt</file>
     </qresource>
 </RCC>

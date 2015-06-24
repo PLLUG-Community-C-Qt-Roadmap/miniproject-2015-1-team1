@@ -61,7 +61,12 @@ Item {
                     Layout.minimumHeight: textHeight
                     Layout.minimumWidth: textWidth
                     text: "Start Game"
+                    onBtnClicked: {
+                        pageLoader.source = "qrc:/Map.qml"
+                        mainWindow.close()
                     }
+
+                }
                 }
             }
         }

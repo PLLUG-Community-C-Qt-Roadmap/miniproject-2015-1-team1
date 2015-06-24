@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.1
 import QtMultimedia 5.0
 
 Item {
+
     anchors.fill: parent
     FontLoader{
         id: pacfont

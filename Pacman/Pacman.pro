@@ -2,7 +2,9 @@ TEMPLATE = app
 
 QT += qml quick
 RC_ICONS = icon.ico #windows
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    mapmodel.cpp \
+    mapobject.cpp
 
 RESOURCES += qml.qrc
 
@@ -13,3 +15,7 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 DISTFILES +=
+
+HEADERS += \
+    mapmodel.h \
+    mapobject.h
